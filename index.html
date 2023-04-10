@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <!-- Icono pagina -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body class="container">
+  <div class="age-card">
+    <div class="age-card__date">
+      <div class="field">
+        <label for="day" class="field__label">day</label>
+        <input id="day" type="text" class="field__input" placeholder="DD">
+        <p class="field__error" id="error-day"></p>
+      </div>      
+      <div class="field">
+        <label for="month" class="field__label">month</label>
+        <input id="month" type="text" class="field__input" placeholder="MM">
+        <p class="field__error" id="error-month"></p>
+      </div>  
+      <div class="field">
+        <label for="year" class="field__label">year</label>
+        <input id="year" type="text" class="field__input" placeholder="YYYY">
+        <p class="field__error" id="error-year"></p>
+      </div>  
+    </div>
+    <div class="age-card__calculate">
+      <div class="calculate">
+        <div class="calculate__hr"></div>
+        <button class="calculate__btn">
+          <img src="./assets/images/icon-arrow.svg"  alt="icon arrow">
+        </button>
+      </div>
+    </div>
+    <div class="age-card__time">
+      <div class="time">
+        <div class="time__container">
+          <p class="time__p" id="years">--</p>
+          <p class="time__p time__p--black">years</p>
+        </div>
+        <div class="time__container">
+          <p class="time__p" id="months">--</p>
+          <p class="time__p time__p--black">months</p>
+        </div>
+        <div class="time__container">
+          <p class="time__p" id="days">--</p>
+          <p class="time__p time__p--black">days</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
